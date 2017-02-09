@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Cheerd_Test1>
+			<active>true</active>
+			<codePool>local</codePool>
+		</Cheerd_Test1>
+	</modules>
+</config>

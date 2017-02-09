@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Cheerd_Test1>
+			<version>0.1.0</version>
+		</Cheerd_Test1>
+	</modules>
+	
+	<global>
+		<helpers>
+			<cheerd_test1>
+				<class>Cheerd_Test1_Helper</class>
+			</cheerd_test1>
+		</helpers>
+	
+		<models>
+			<cheerd_test1>
+				<class>Cheerd_Test1_Model</class>
+			</cheerd_test1>
+		</models>
+	</global>
+	
+	<default>
+		<carriers>
+			<cheerd_test1>
+				<active>1</active>
+				<model>cheerd_test1/courier</model>
+				<title>Courier</title>
+				<bicycle_max_weight>16</bicycle_max_weight>
+				<bicycle_cost>100</bicycle_cost>
+				<automobile_cost>250</automobile_cost>
+				<bicycle_free_total_cost>1000</bicycle_free_total_cost>
+				<automobile_free_total_cost>5000</automobile_free_total_cost>
+				<city>Taganrog</city>
+			</cheerd_test1>
+		</carriers>
+	</default>
+	
+</config>
