@@ -1,81 +1,81 @@
 <?xml version="1.0"?>
 <config>
-	<sections>
-		<carriers>
-			<groups>
-				<cheerd_test1 translate="label" module="cheerd_test1">
-					<label>Courier</label>
-					<frontend_type>text</frontend_type>
-					<sort_order>1</sort_order>
-					<show_in_default>1</show_in_default>
-                    <show_in_website>1</show_in_website>
-                    <show_in_store>1</show_in_store>
-					<fields>
-						<active translate="label">
-                            <label>Enabled for Checkout</label>
-                            <frontend_type>select</frontend_type>
-                            <source_model>adminhtml/system_config_source_yesno</source_model>
-                            <sort_order>10</sort_order>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>1</show_in_website>
-                            <show_in_store>0</show_in_store>
-                        </active>
-						<bicycle_max_weight translate="label">
-							<label>Maximum Package Weight For Bicycle (kg)</label>
-							<frontend_type>text</frontend_type>
-                   	     	<validate>validate-number validate-zero-or-greater</validate>
-     	              	    <sort_order>20</sort_order>
-       	            	    <show_in_default>1</show_in_default>
-       		          		<show_in_website>1</show_in_website>
-       	            	    <show_in_store>0</show_in_store>
-						</bicycle_max_weight>
-						<bicycle_cost translate="label">
-							<label>Bicycle delivery cost</label>
-							<frontend_type>text</frontend_type>
-                   	     	<validate>validate-number validate-zero-or-greater</validate>
-     	              	    <sort_order>30</sort_order>
-       	            	    <show_in_default>1</show_in_default>
-       		          		<show_in_website>1</show_in_website>
-       	            	    <show_in_store>0</show_in_store>
-						</bicycle_cost>
-						<automobile_cost translate="label">
-							<label>Automobile delivery cost</label>
-							<frontend_type>text</frontend_type>
-                   	     	<validate>validate-number validate-zero-or-greater</validate>
-     	              	    <sort_order>40</sort_order>
-       	            	    <show_in_default>1</show_in_default>
-       		          		<show_in_website>1</show_in_website>
-       	            	    <show_in_store>0</show_in_store>
-						</automobile_cost>
-						<bicycle_free_total_cost translate="label">
-							<label>Package cost for free delivery by bicycle</label>
-							<frontend_type>text</frontend_type>
-                   	     	<validate>validate-number validate-zero-or-greater</validate>
-     	              	    <sort_order>50</sort_order>
-       	            	    <show_in_default>1</show_in_default>
-       		          		<show_in_website>1</show_in_website>
-       	            	    <show_in_store>0</show_in_store>
-						</bicycle_free_total_cost>
-						<automobile_free_total_cost translate="label">
-							<label>Package cost for free delivery by automobile</label>
-							<frontend_type>text</frontend_type>
-                   	     	<validate>validate-number validate-zero-or-greater</validate>
-     	              	    <sort_order>60</sort_order>
-       	            	    <show_in_default>1</show_in_default>
-       		          		<show_in_website>1</show_in_website>
-       	            	    <show_in_store>0</show_in_store>
-						</automobile_free_total_cost>
-						<city translate="label">
-							<label>City</label>
-							<frontend_type>text</frontend_type>
-     	              	    <sort_order>70</sort_order>
-       	            	    <show_in_default>1</show_in_default>
-       		          		<show_in_website>1</show_in_website>
-       	            	    <show_in_store>0</show_in_store>
-						</city>
-					</fields>
-				</cheerd_test1>
-			</groups>
-		</carriers>
-	</sections>
+  <sections>
+    <carriers>
+      <groups>
+        <cheerd_test1 translate="label" module="cheerd_test1">
+          <label>Courier</label>
+          <frontend_type>text</frontend_type>
+          <sort_order>1</sort_order>
+          <show_in_default>1</show_in_default>
+          <show_in_website>1</show_in_website>
+          <show_in_store>1</show_in_store>
+          <fields>
+            <active translate="label">
+              <label>Enabled for Checkout</label>
+              <frontend_type>select</frontend_type>
+              <source_model>adminhtml/system_config_source_yesno</source_model>
+              <sort_order>10</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+              </active>
+            <bicycle_max_weight translate="label">
+              <label>Maximum Package Weight For Bicycle (kg)</label>
+              <frontend_type>text</frontend_type>
+              <validate>validate-number validate-zero-or-greater</validate>
+              <sort_order>20</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </bicycle_max_weight>
+            <bicycle_cost translate="label">
+              <label>Bicycle delivery cost</label>
+              <frontend_type>text</frontend_type>
+              <validate>validate-number validate-zero-or-greater</validate>
+              <sort_order>30</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </bicycle_cost>
+            <automobile_cost translate="label">
+              <label>Automobile delivery cost</label>
+              <frontend_type>text</frontend_type>
+              <validate>validate-number validate-zero-or-greater</validate>
+              <sort_order>40</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </automobile_cost>
+            <bicycle_free_total_cost translate="label">
+              <label>Package cost for free delivery by bicycle</label>
+              <frontend_type>text</frontend_type>
+              <validate>validate-number validate-zero-or-greater</validate>
+              <sort_order>50</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </bicycle_free_total_cost>
+            <automobile_free_total_cost translate="label">
+              <label>Package cost for free delivery by automobile</label>
+              <frontend_type>text</frontend_type>
+              <validate>validate-number validate-zero-or-greater</validate>
+              <sort_order>60</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </automobile_free_total_cost>
+            <city translate="label">
+              <label>City</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>70</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </city>
+          </fields>
+        </cheerd_test1>
+      </groups>
+    </carriers>
+   </sections>
 </config>
