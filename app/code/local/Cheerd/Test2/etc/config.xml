@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Cheerd_Test2>
+			<version>0.1.0</version>
+		</Cheerd_Test2>
+		
+	</modules>
+	
+	<frontend>
+		<layout>
+			<updates>
+				<featured_layout>
+					<file>cheerd_test2/featured.xml</file>
+				</featured_layout>
+			</updates>
+		</layout>
+	</frontend>
+	
+	<global>			
+		<blocks>
+			<cheerd_test2>
+				<class>Cheerd_Test2_Block</class>
+			</cheerd_test2>
+		</blocks>
+		
+		<resources>
+			<cheerd_test2_setup>
+				<setup>
+					<module>Cheerd_Test2</module>
+					<class>Mage_Eav_Model_Entity_Setup</class>
+				</setup>
+				<connection>
+					<use>core_setup</use>
+				</connection>
+			</cheerd_test2_setup>
+		</resources>
+	</global>
+</config>
