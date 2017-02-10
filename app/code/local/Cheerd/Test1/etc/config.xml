@@ -36,4 +36,17 @@
 		</carriers>
 	</default>
 	
+	<frontend>
+		<translate>
+			<modules>
+				<cheerd_test1>
+					<files>
+						<default>Cheerd_Test1.csv</default>
+						<alternative>Cheerd_Test1.csv</alternative>
+					</files>
+				</cheerd_test1>
+			</modules>
+		</translate>
+	</frontend>
+	
 </config>

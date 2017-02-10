@@ -11,8 +11,8 @@ class Cheerd_Test1_Model_Courier
 	public function getAllowedMethods()
 	{
 		return array(
-				'bicycle' => $this->BYCICLE,
-				'automobile' => $this->AUTOMOBILE
+				'bicycle' => Mage::helper('cheerd_test1')->__($this->BYCICLE),
+				'automobile' => Mage::helper('cheerd_test1')->__($this->AUTOMOBILE)
 		);
 	}
 	
@@ -30,7 +30,7 @@ class Cheerd_Test1_Model_Courier
 			$totalWeight += $item->getWeight();
 		}
 		
-		if ($request->getDestCity() == 'Taganrog' && $totalWeight <= $bicycleMaxWeight)
+		if ($request->getDestCity() == $helper->__('Taganrog') && $totalWeight <= $bicycleMaxWeight)
 		{
 			$result->append($this->getBicycleRate($helper->getBicycleFreeTotalCost() < $cost));
 		}
@@ -43,12 +43,13 @@ class Cheerd_Test1_Model_Courier
 	{
 		/** @var Mage_Shipping_Model_Rate_Result_Method $rate */
 		$rate = Mage::getModel('shipping/rate_result_method');
+		$helper = Mage::helper('cheerd_test1');
 		
 		$rate->setCarrier($this->_code);
-		$rate->setCarrierTitle($this->getConfigData('title'));
+		$rate->setCarrierTitle($helper->__($this->getConfigData('title')));
 		$rate->setMethod('bicycle');
-		$rate->setMethodTitle(self::BICYCLE);
-		$rate->setPrice($free ? 0 : Mage::helper('cheerd_test1')->getBicycleCost());
+		$rate->setMethodTitle($helper->__(self::BICYCLE));
+		$rate->setPrice($free ? 0 : $helper->getBicycleCost());
 		$rate->setCost(0);
 		
 		return $rate;
@@ -58,11 +59,12 @@ class Cheerd_Test1_Model_Courier
 	{
 		/** @var Mage_Shipping_Model_Rate_Result_Method $rate */
 		$rate = Mage::getModel('shipping/rate_result_method');
+		$helper = Mage::helper('cheerd_test1');
 		
 		$rate->setCarrier($this->_code);
-		$rate->setCarrierTitle($this->getConfigData('title'));
+		$rate->setCarrierTitle($helper->__($this->getConfigData('title')));
 		$rate->setMethod('automobile');
-		$rate->setMethodTitle(self::AUTOMOBILE);
+		$rate->setMethodTitle($helper->__(self::AUTOMOBILE));
 		$rate->setPrice($free ? 0 : Mage::helper('cheerd_test1')->getAutomobileCost());
 		$rate->setCost(0);
 		
